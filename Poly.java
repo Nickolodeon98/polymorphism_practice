@@ -66,7 +66,7 @@ class Buyer {
     }
 
     public void add(Product p) {
-        if (cartState == this.cart.length-1) {
+        if (cartState >= this.cart.length-1) {
             Product[] newCart = new Product[this.cart.length*2];
             System.arraycopy(this.cart, 0, newCart, 0, cart.length);
             this.cart = newCart;
